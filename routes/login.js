@@ -4,7 +4,7 @@ const jwt = require('jsonwebtoken');
 
 router.post('/', (req, res, next) => {
     //esse teste abaixo deve ser feito no seu banco de dados
-    if(req.body.user === 'luiz' && req.body.password === '123'){
+    if(req.body.user == 'Eliane' && req.body.password === '123456'){
       //auth ok
       const id = 1; //esse id viria do banco de dados
       const token = jwt.sign({ id }, process.env.SECRET, {
