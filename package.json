@@ -15,7 +15,9 @@
     "express": "~4.16.1",
     "express-jwt": "^6.0.0",
     "http-errors": "~1.6.3",
-    "morgan": "~1.9.1"
+    "knex": "^0.95.2",
+    "morgan": "~1.9.1",
+    "mysql2": "^2.2.5"
   },
   "devDependencies": {
     "nodemon": "^2.0.7"

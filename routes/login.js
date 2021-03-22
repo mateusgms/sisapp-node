@@ -3,6 +3,10 @@ const router = express.Router();
 const jwt = require('jsonwebtoken');
 
 router.post('/', (req, res, next) => {
+    
+    // rota do banco
+    // knex.select().from('estipulantes').then(e => res.json(e)).catch(e => res.send(e))
+
     //esse teste abaixo deve ser feito no seu banco de dados
     if (req.body.user == 'Eliane' && req.body.password === '123456') {
         //auth ok
